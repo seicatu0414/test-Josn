@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="22G513" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="KeepInfo" representedClassName="KeepInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="groupTitle" optional="YES" attributeType="String"/>
+        <attribute name="hitFollowersCount" optional="YES" attributeType="String"/>
+        <attribute name="hitID" optional="YES" attributeType="String"/>
+        <attribute name="hitLabel" optional="YES" attributeType="String"/>
+        <attribute name="hitType" optional="YES" attributeType="String"/>
+        <attribute name="sectionTitle" optional="YES" attributeType="String"/>
+    </entity>
+</model>

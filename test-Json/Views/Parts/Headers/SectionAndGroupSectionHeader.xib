@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SectionAndGroupSectionHeader" id="P67-cZ-IE1" customClass="SectionAndGroupSectionHeader" customModule="test_News_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPg-yl-18o">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="人気のトピック" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4w-JB-p4K">
+                            <rect key="frame" x="24" y="15" width="107.33333333333331" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="銀行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiF-TO-Cl0">
+                            <rect key="frame" x="24" y="35.666666666666664" width="25" height="14.333333333333336"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hiF-TO-Cl0" firstAttribute="leading" secondItem="mPg-yl-18o" secondAttribute="leading" constant="24" id="oWV-AA-UXj"/>
+                        <constraint firstAttribute="bottom" secondItem="hiF-TO-Cl0" secondAttribute="bottom" constant="10" id="omt-zx-brJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="9bk-wv-T9x"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mPg-yl-18o" secondAttribute="bottom" id="Btq-Al-znI"/>
+                <constraint firstItem="9bk-wv-T9x" firstAttribute="trailing" secondItem="mPg-yl-18o" secondAttribute="trailing" id="R8I-Yt-2kS"/>
+                <constraint firstItem="mPg-yl-18o" firstAttribute="leading" secondItem="9bk-wv-T9x" secondAttribute="leading" id="gXG-PB-Grt"/>
+                <constraint firstItem="mPg-yl-18o" firstAttribute="top" secondItem="P67-cZ-IE1" secondAttribute="top" id="mHi-xd-xZj"/>
+            </constraints>
+            <connections>
+                <outlet property="groupLabel" destination="hiF-TO-Cl0" id="Xy7-Ne-ngX"/>
+                <outlet property="sectionLabel" destination="f4w-JB-p4K" id="nKl-2Q-kyI"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="-324.64788732394368"/>
+        </collectionReusableView>
+    </objects>
+</document>
